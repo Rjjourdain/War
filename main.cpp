@@ -20,8 +20,6 @@ using namespace std;
 void displayRules();
 int rankToVal(char);
 
-//Global Constants
-const int WIN_TOTAL = 52;
 
 //Program Execution Begins Here
 int main(int argc, char** argv)
@@ -35,12 +33,12 @@ int main(int argc, char** argv)
 	Deck deck(true);
 	
         
-	// Create decks for player and computer 
+	// Create decks for User and Computer 
 	Deck userDeck(false);
 	Deck cpuDeck(false);
 	
         
-	// Create Player and Computer war decks for war rounds
+	// Create User and Computer war decks for war rounds
 	Deck userWarDeck(false);
 	Deck cpuWarDeck(false);
 	
@@ -52,13 +50,17 @@ int main(int argc, char** argv)
 	bool atWar = false;     
         
         
-        // Player's deck count
+        // Total cards required to win the game
+        const int WIN_TOTAL = 52;
+        
+        
+        // Users deck count
 	int userTotCards = 0; 
         
-        // Computer's deck count
+        // Computers deck count
 	int cpuTotCards = 0;	
 	
-        // Players card value
+        // Users card value
 	int userVal = 0; 
         
         // Computers card value
@@ -68,7 +70,7 @@ int main(int argc, char** argv)
         int warPot = 0;		
         
         
-        // Players card rank
+        // User card rank
 	char userRank;
         
         // Computers card rank

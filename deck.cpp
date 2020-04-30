@@ -152,7 +152,8 @@ void Deck::addCard(Card* c)
 	}
 	
 	// Traverse list till the end of the deck
-	else {
+	else 
+        {
 		
 		while ( current -> next) 
                 {
